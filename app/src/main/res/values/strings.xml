@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GitHub User</string>
+    <string name="repository_qty">115</string>
+    <string name="username">username</string>
+    <string name="name">name</string>
+
+    <!--    English-->
+    <string name="followers">Followers :</string>
+    <string name="following">Following :</string>
+    <string name="find_username">Find username</string>
+    <string name="tab_following">Following</string>
+    <string name="tab_followers">Followers</string>
+    <string name="repository">Repositories</string>
+
+    <string name="followers_qty">100</string>
+    <string name="following_qty">120</string>
+    <string name="localitation">Bandung</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_screen_desc">To see your accounts that has\nverified by GitHub</string>
+    <string name="html_url" translatable="false">html_url</string>
+    <string name="tidak_ada_koneksi">Please Check Your Internet Connection</string>
+    <string name="null_following">You Don\'t Follow Anyone</string>
+    <string name="null_followers">You Don\'t Have Any Followers</string>
+    <string name="setting">Settings</string>
+    <string name="favourite">Favourite</string>
+    <string name="bio">this bio</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="reminder">Reminder at 9.00 AM</string>
+    <string name="change_language">Change Language</string>
+    <string name="region">English</string>
+    <string name="title">Reminder</string>
+    <string name="message">Lets Find Popular User On Github</string>
+</resources>

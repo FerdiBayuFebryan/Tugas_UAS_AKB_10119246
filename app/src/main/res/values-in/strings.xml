@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GitHub User</string>
+    <string name="repository_qty">115</string>
+    <string name="username">nama pengguna</string>
+    <string name="name">nama</string>
+
+    <string name="followers">Pengikut :</string>
+    <string name="following">Mengikuti :</string>
+    <string name="find_username">Cari Nama Pengguna</string>
+    <string name="tab_following">Mengikuti</string>
+    <string name="tab_followers">Pengikut</string>
+    <string name="repository">Repositori</string>
+
+    <string name="followers_qty">100</string>
+    <string name="following_qty">120</string>
+    <string name="localitation">Bandung</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hallo ini fragment kosong</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="splash_screen_desc">Untuk melihat akun GitHub\n yang telah diverifikasi</string>
+    <string name="tidak_ada_koneksi">Tolong Periksa Koneksi Internet Anda </string>
+    <string name="null_following">Kau Tidak Mengikuti Siapapun</string>
+    <string name="null_followers">Kau Tidak Mempunyai Pengikut</string>
+    <string name="setting">Pengaturan</string>
+    <string name="favourite">Favourite</string>
+    <string name="bio">ini bio</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="reminder">Pengingat Pada Jam 9.00 WIB</string>
+    <string name="region">Indonesia</string>
+    <string name="title">Pengingat</string>
+    <string name="message">Ayo Cari Pengguna Populer DiGithub</string>
+</resources>

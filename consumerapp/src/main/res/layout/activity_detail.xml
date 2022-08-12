@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constrainst_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/iv_photo_detail"
+                android:layout_marginEnd="30dp">
+
+                <TextView
+                    android:id="@+id/tv_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/bio"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:text="@string/followers"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_localisation" />
+
+                <TextView
+                    android:id="@+id/tv_following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/following"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_followers"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_localisation" />
+
+                <TextView
+                    android:id="@+id/tv_blog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/ic_round_public_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center"
+                    android:text="www.blog.com"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_bio" />
+
+                <TextView
+                    android:id="@+id/tv_localisation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_home_24"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="start|center"
+                    android:text="@string/localitation"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_blog"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_repository"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/ic_baseline_library_books_24"
+                    android:drawablePadding="8dp"
+                    android:text="@string/repository_qty"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_followers" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_photo_detail"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:src="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/iv_photo_detail"
+                android:text="@string/name"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_name"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="46dp"
+                android:layout_toRightOf="@id/iv_photo_detail"
+                android:text="@string/username"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/constrainst_layout"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:minHeight="?actionBarSize"
+                app:tabMode="fixed"
+                app:tabTextColor="@color/colorWhite" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tabs_layout"
+                android:background="@color/colorWhite"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btn_unliked"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignStart="@+id/iv_photo_detail"
+                android:layout_alignTop="@+id/iv_photo_detail"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="83dp"
+                android:src="@drawable/ic_unliked"
+                android:visibility="invisible"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btn_liked"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignStart="@+id/iv_photo_detail"
+                android:layout_alignTop="@+id/iv_photo_detail"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="83dp"
+                android:src="@drawable/ic_liked"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
